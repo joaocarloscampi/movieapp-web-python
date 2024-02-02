@@ -11,5 +11,7 @@ Moreover, this example was initially set up to run using Replit.com
 
 >> poetry run python main.py
 >>
->> Giovanna Amorim Nascimento RA:784267
->> 
+
+## Nomes
+Giovanna Amorim Nascimento RA: 784267
+João Carlos Tonon Campi RA: 769723 
