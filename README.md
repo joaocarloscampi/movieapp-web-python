@@ -14,4 +14,5 @@ Moreover, this example was initially set up to run using Replit.com
 
 ## Nomes
 Giovanna Amorim Nascimento RA: 784267
-João Carlos Tonon Campi RA: 769723 
+Igor Nicoletti Pinto RA: 754229
+João Carlos Tonon Campi RA: 769723
