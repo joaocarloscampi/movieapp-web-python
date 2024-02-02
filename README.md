@@ -10,3 +10,6 @@ Moreover, this example was initially set up to run using Replit.com
 >> poetry install
 
 >> poetry run python main.py
+>>
+>> Giovanna Amorim Nascimento RA:784267
+>> 
