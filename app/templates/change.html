@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block body %}
+{% include 'menu.html' %}
+
+<div class="container">
+  <h2>Change a movie</h2>
+  <form method="post" action="/change">
+    <table
+      <tr>
+        <input type="hidden" name="id" value="{{ movie.id }}">
+      </tr>
+      <tr>
+        <td><label for="moviename_field">Movie Name:</label></td>
+        <td><input name="moviename_field" size="30" type="text", value="{{ movie.name }}"></td>
+      </tr>
+      <tr>
+        <td><label for="year_field">Movie Year:</label></td>
+        <td><input name="year_field" size="4" type="number", value="{{ movie.year }}"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><input id="add_button" type="submit" value="UPDATE"></td>
+      </tr>
+    </table>
+  </form>
+</div>
+{% include 'footer.html' %}
+{% endblock %}

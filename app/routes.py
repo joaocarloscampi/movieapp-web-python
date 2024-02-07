@@ -73,3 +73,23 @@ def movies():
   for m in movieDAO.get_all():
     movies.append({"id": m.id, "name": m.name, "year": m.year})
   return render_template('movies.html', movies=movies)
+
+
+@bp.route('/change', methods=['GET', 'POST'])
+@login_required
+def change():
+  if request.method == "GET":
+    iid = request.args.get('id')
+    iid = int(iid) - 1
+    iid = str(iid)
+    print("Id: ", iid)
+    movie = movieDAO.get_all()[int(iid)]
+    print("Nome: ", movie.name)
+    return render_template('change.html', movie=movie)
+  elif request.method == "POST":
+    movie = Movie(request.form['id'], request.form['moviename_field'],
+                  int(request.form['year_field']))
+    movieDAO.update(movie)
+    return redirect(url_for('main.main'))
+  else:
+    return redirect(url_for('main.main'))
