@@ -13,6 +13,7 @@ Moreover, this example was initially set up to run using Replit.com
 >>
 
 ## Nomes
+André Camilo Terra Costa RA: 769883
 Giovanna Amorim Nascimento RA: 784267
 Igor Nicoletti Pinto RA: 754229
 João Carlos Tonon Campi RA: 769723
